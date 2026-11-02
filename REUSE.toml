@@ -1,0 +1,14 @@
+# Who made each file here, and the license it comes under, in the REUSE
+# format (https://reuse.software/spec-3.3/). Every file is Ectonomic's own
+# unless a later table names it.
+version = 1
+
+[[annotations]]
+path = "**"
+SPDX-FileCopyrightText = "2026 Ectonomic LLC"
+SPDX-License-Identifier = "GPL-3.0-only"
+
+[[annotations]]
+path = ["crates/ectomatter-weather/data/meteoalarm-regions.json", "crates/ectomatter-weather/data/NOTICE.md"]
+SPDX-FileCopyrightText = ["2025 Niklas Jordan (https://github.com/NiklasJordan/meteoalarm)", "EUMETNET (MeteoAlarm, https://meteoalarm.org)"]
+SPDX-License-Identifier = "MIT AND CC-BY-4.0"

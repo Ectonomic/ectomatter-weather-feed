@@ -1,0 +1,27 @@
+// The Weather Feed plugin: the weather at the place chosen in Settings, for every
+// device that shows it, and the warnings in force there. It asks the web only
+// through Ectomatter, which reaches only the hosts named below, and tells
+// Ectomatter its Settings section and its readings as they change
+// (docs/core-protocol.md, section 11).
+{
+  "id": "weather-feed",
+  "kind": "plugin",
+  "name": "Weather Feed",
+  "version": "1.0.1",
+  "protocol": 4,          // the core protocol it speaks
+  "ectomatter": "0.1.0",  // the oldest Ectomatter it runs on
+  "module": "core.wasm",  // built from module/ by tools/build-plugins.sh
+  "license": "GPL-3.0-only",
+  "description": "The weather and warnings where you are, for screens that show them.",
+  "glyph": "glyph.svg",   // Phosphor's cloud-sun, Light (phosphoricons.com, MIT)
+  "adds": ["settings", "readings"],
+  "uses": [
+    { "web": "api.open-meteo.com", "to": "Open-Meteo" },
+    { "web": "air-quality-api.open-meteo.com", "to": "Open-Meteo" },
+    { "web": "geocoding-api.open-meteo.com", "to": "Open-Meteo" },
+    { "web": "photon.komoot.io", "to": "Photon" },
+    { "web": "api.weather.gov", "to": "the National Weather Service" },
+    { "web": "api.weather.gc.ca", "to": "Environment and Climate Change Canada" },
+    { "web": "feeds.meteoalarm.org", "to": "MeteoAlarm" }
+  ]
+}
