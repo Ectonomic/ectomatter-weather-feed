@@ -1,6 +1,13 @@
-# Weather Feed for Ectomatter
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="pictures/logo-dark.svg">
+    <img src="pictures/logo-light.svg" width="88" alt="">
+  </picture>
+</p>
 
-The weather and warnings where you are, for screens that show them.
+<h1 align="center">Weather Feed for Ectomatter</h1>
+
+<p align="center">The weather and warnings where you are, for screens that show them.</p>
 
 This is a plugin for [Ectomatter](https://github.com/Ectonomic/Ectomatter), one app for the devices on your desk. A plugin brings something into Ectomatter that isn't a device, such as another program, the games on the computer or the weather. It runs inside Ectomatter as a WebAssembly module and reaches only what its manifest (`core.json`) names.
 
@@ -23,6 +30,7 @@ Ectonomic builds its releases with Rust 1.98.1.
 
 - `core.json`, `glyph.svg`: the plugin as Ectomatter installs it, its manifest and the files it carries
 - `module/`: the module's source
+- `pictures/`: the logo at the top of this README, the plugin's icon in GitHub's text colors, made in Ectomatter's repository by `tools/plugin-logos.py`, and not part of the plugin
 - `crates/`: the plugin's own library, which its module is built from
   - `ectomatter-weather`: the weather now in one place, for every device Ectomatter drives: the Weather Feed plugin's library
 

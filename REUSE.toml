@@ -12,3 +12,9 @@ SPDX-License-Identifier = "GPL-3.0-only"
 path = ["crates/ectomatter-weather/data/meteoalarm-regions.json", "crates/ectomatter-weather/data/NOTICE.md"]
 SPDX-FileCopyrightText = ["2025 Niklas Jordan (https://github.com/NiklasJordan/meteoalarm)", "EUMETNET (MeteoAlarm, https://meteoalarm.org)"]
 SPDX-License-Identifier = "MIT AND CC-BY-4.0"
+
+# Phosphor's cloud-sun, the plugin's icon, and the README's copies of it
+[[annotations]]
+path = ["glyph.svg", "pictures/logo-light.svg", "pictures/logo-dark.svg"]
+SPDX-FileCopyrightText = "2023 Phosphor Icons (https://phosphoricons.com)"
+SPDX-License-Identifier = "MIT"
